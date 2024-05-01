@@ -1,5 +1,6 @@
+import sys
 def main():
-    
+  
     nombre1 = input("Nombre #1 : ")
     nombre2 = input("Nombre #2 : ")
     operation = input("Entrez l'operation +, -, * ou / : ")
@@ -7,9 +8,10 @@ def main():
     
     if not nombre1.isnumeric() or not nombre2.isnumeric() :
         print("Erreur: Les deux valeurs doivent être des nombres entiers")
+        sys.exit()
     else : 
         nombre1 = int(nombre1)
-        nombre2 = int(nombre2)
+        nombre2 = int(nombre2)   
 
     match operation:
         case "+":
@@ -21,11 +23,12 @@ def main():
         case "/":
             if nombre2 == 0:
                 print("Division par 0 impossible !")
+                sys.exit()
             else:
                 resultat = nombre1 / nombre2
-        case _:
-            print("Erreur: Vous devez entrer une opération entre +, -, * ou /.")
-
+        case _:  
+            print("Erreur: Vous devez entrer +, -, * ou / pour l'opération")
+                
     print(f"Le résultat est {resultat}")
 
 # Ne touchez pas le code ci-dessous
