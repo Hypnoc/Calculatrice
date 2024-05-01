@@ -1,12 +1,33 @@
 def main():
-    nombre_a_gauche = input("chiffre_#1 :")
-    nombre_a_droite = input("chiffre #2 :")
-    operation = input("+, -, *, / : ")
+
+    nombre1 = input("Nombre #1 : ")
+    nombre2 = input("Nombre #2 : ")
+    operation = input("Entrez l'operation +, -, * ou / : ")
     resultat = 0
     
-    if not nombre_a_gauche.isnumeric() or not nombre_a_droite.isnumeric() :
-        print("Erreur: les deux nombres doivent être des nombres entiers")
-    else : int(resultat)
+    if not nombre1.isnumeric() or not nombre2.isnumeric() :
+        print("Erreur: Les deux valeurs doivent être des nombres entiers") and quit()
+    else : 
+        nombre1 = int(nombre1)
+        nombre2 = int(nombre2)
+
+    match operation:
+        case "+":
+            resultat = nombre1 + nombre2
+        case "-":
+            resultat = nombre1 - nombre2
+        case "*":
+            resultat = nombre1 * nombre2
+        case "/":
+            if nombre2 == 0:
+                print("Division par 0 impossible !")
+            else:
+                resultat = nombre1 / nombre2
+        case _:
+            print("Erreur: Vous devez entrer une opération entre +, -, * ou /.")
+
+    if not nombre2 ==0 and not operation =="/" :
+        print(f"Le résultat est {resultat}")
 
 # Ne touchez pas le code ci-dessous
 if __name__ == "__main__":
