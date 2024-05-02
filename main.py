@@ -16,20 +16,23 @@ def main():
     match operation:
         case "+":
             resultat = nombre1 + nombre2
+            print(f"Le résultat est {resultat}")
         case "-":
             resultat = nombre1 - nombre2
+            print(f"Le résultat est {resultat}")
         case "*":
             resultat = nombre1 * nombre2
+            print(f"Le résultat est {resultat}")
         case "/":
             if nombre2 == 0:
                 print("Division par 0 impossible !")
                 sys.exit()
             else:
                 resultat = nombre1 / nombre2
+                print(f"Le résultat est {resultat}")                
         case _:  
             print("Erreur: Vous devez entrer +, -, * ou / pour l'opération")
-                
-    print(f"Le résultat est {resultat}")
+            sys.exit()
 
 # Ne touchez pas le code ci-dessous
 if __name__ == "__main__":
