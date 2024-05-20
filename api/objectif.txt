@@ -6,13 +6,4 @@ websites recup et afficher à l'utilisateur pour choisir dans la liste des sites
 4) Dans dossier /websites créer un sous-dossier du nom du site choisi et y copier le fichier images-templates correspondant
 5) Faire une copie de template index.html et changer le nom pour chaque site
 6) Dans le fichier du nouveau site, remplacer les balises par les bonnes infos de l'étape 3)
-7) Copier la bonne image-template dans le dossier correspondant7
-
-{'id': 45,
- 'body': {'color': '#b57e57'}
- 'title': 'EcoCuisinePlus'
- 'h1': {'text': 'Nourrissez votre vie, préservez la planète.', 'color': '#b57e57', 'background-color': '#1f911f'}
- 'p': {'text': "Un site dédié aux recettes et produits alimentaires écologiques et durables. Il offre des conseils 
-pour adopter une alimentation respectueuse de l'environnement, des recettes végétariennes, véganes, et des astuces
- pour réduire le gaspillage alimentaire.", 'color': '#1f911f'}
- 'img': {'src': 'cuisine.webp', 'alt': 'cuisine'}}
+7) Copier la bonne image-template dans le dossier correspondant
